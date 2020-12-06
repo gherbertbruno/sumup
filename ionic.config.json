@@ -1,5 +1,7 @@
 {
   "name": "SumUpApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

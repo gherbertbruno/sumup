@@ -1,0 +1,17 @@
+{
+  "name": "com.herbert.sumup",
+  "version": "1.0.0",
+  "description": "SumUp cordova plugin ",
+  "cordova": {
+    "id": "com.herbert.sumup",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Herbert",
+  "license": "ISC"
+}

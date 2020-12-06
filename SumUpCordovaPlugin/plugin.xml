@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.herbert.sumup" version="1.0.0"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>SumUpCordovaPlugin</name>
+	<js-module name="SumUpCordovaPlugin" src="www/SumUpCordovaPlugin.js">
+		<clobbers target="cordova.plugins.SumUpCordovaPlugin" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="SumUpCordovaPlugin">
+				<param name="android-package" value="com.herbert.sumup.SumUpCordovaPlugin" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+		<source-file src="src/android/SumUpCordovaPlugin.java" target-dir="src/com/herbert/sumup/SumUpCordovaPlugin" />
+	   <preference name="API_KEY" />
+        
+		<config-file target="./res/values/strings.xml" parent="/resources">
+            <string name="API_KEY">$API_KEY</string>
+        </config-file>
+
+	  <framework
+            custom="true"
+            src="src/android/sumup.gradle"
+            type="gradleReference"/>  
+	</platform>
+</plugin>
