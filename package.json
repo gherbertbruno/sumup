@@ -70,7 +70,7 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-ionic-webview": {},
       "com.herbert.sumup": {
-        "API_KEY": "8e95b458-5637-41bd-b7ee-aa1e315c3c4d"
+        "API_KEY": "YOUR_SUMUP_API_KEY"
       }
     },
     "platforms": [
